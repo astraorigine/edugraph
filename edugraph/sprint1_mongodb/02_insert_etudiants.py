@@ -39,4 +39,4 @@ etudiants = [
 
 #insertion de l'étudiant dans la collection
 resultat = collection_etudiants.insert_many(etudiants)
-print(f"\n IDs insérés : {resultat.inserted_ids}")
+print(f"\n IDs inséréscls : {resultat.inserted_ids}")
