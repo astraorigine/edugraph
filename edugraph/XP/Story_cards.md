@@ -2,7 +2,7 @@
 
 
 
-### US-01:Créer un profil étudiant
+### US-01:Crï¿½er un profil ï¿½tudiant
 
 
 
@@ -10,12 +10,12 @@
 
 
 
-#### Critères:
+#### Critï¿½res:
 
 
 
-* \[x] Document insérer
-* \[x] Contient nom, age, email, compétences, niveau
+* \[x] Document insï¿½rer
+* \[x] Contient nom, age, email, compï¿½tences, niveau
 * \[x] MongoDB retourne un \_id unique
 
 
@@ -24,31 +24,31 @@
 
 
 
-### US-02 — Insérer plusieurs étudiants
+### US-02 ï¿½ Insï¿½rer plusieurs ï¿½tudiants
 
 #### Statut : DONE
 
-#### Critères :
+#### Critï¿½res :
 
 * &nbsp;\[x] insert\_many fonctionne avec une liste
 * &nbsp;\[x] Chaque document a une structure flexible
-* &nbsp;\[x] Tous les IDs sont retournés
+* &nbsp;\[x] Tous les IDs sont retournï¿½s
 
 
 
 
 
-### US-03 — En tant que formateur, je veux trouver des étudiants selon des critères précis.
+### US-03 ï¿½ En tant que formateur, je veux trouver des ï¿½tudiants selon des critï¿½res prï¿½cis.
 
 
 
 #### Statut : Done
 
-#### Critères :
+#### Critï¿½res :
 
-* \[x] Récupérer tous les étudiants
-* \[X] Trouver un étudiant par son nom
-* \[] Trouver tous les étudiants qui maîtrisent "Python"
+* \[x]ï¿½Rï¿½cupï¿½rer tous les ï¿½tudiants
+* \[X]ï¿½Trouver un ï¿½tudiant par son nom
+* \[x]ï¿½Trouver tous les ï¿½tudiants qui maï¿½trisent "Python"
 
 
 
