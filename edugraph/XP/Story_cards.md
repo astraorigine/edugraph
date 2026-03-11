@@ -51,6 +51,13 @@
 * \[x]�Trouver tous les �tudiants qui ma�trisent "Python"
 
 
+### US-04 — Mettre à jour et supprimer
+####Statut : DONE
+####Critères :
+  - [x] Modification d'un champ sans écraser le tout
+  - [x] Supprime un document ciblé
+  - [x] Vérification avec find_one après chaque opération
+
 
 
 
