@@ -61,6 +61,13 @@
 ## Sprint2
 ### US-05 - Créer des noeuds et relations Neo4j
 
+### US-06 - chemin de competences
+#### Statut : DONE
+#### Critères :
+  - [x] Traversée de graphe avec [:EST_PREREQUIS*]
+  - [x] Capture du chemin complet avec p =
+  - [x] Extraction des nœuds avec nodes(p)
+
 
 
 
