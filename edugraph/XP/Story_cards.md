@@ -68,6 +68,12 @@
   - [x] Capture du chemin complet avec p =
   - [x] Extraction des nœuds avec nodes(p)
 
+### US-07 — Recommander des étudiants
+#### Statut : DONE
+#### Critères :
+  - [x] MATCH avec relation CONNAIT
+  - [x] Filtrage par compétence
+  - [x] Retour des propriétés avec e.nom
 
 
 
