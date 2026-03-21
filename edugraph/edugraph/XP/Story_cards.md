@@ -84,7 +84,12 @@
   - [x] Création de relations "CONNAIT" automatiquement 
   - [x] Synchronisation de toute la base
 
-
+### Tests — Validation complète
+#### Statut : DONE
+#### Critères :
+  - [x] test_mongodb.py — 3 tests passent
+  - [x] test_neo4j.py — 3 tests passent
+  - [x] test_integration.py — synchronisation validée
 
 
 
