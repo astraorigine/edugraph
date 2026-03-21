@@ -1,6 +1,7 @@
+from sprint3_integration.config import MONGO_URI
 from pymongo import MongoClient
 
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient(MONGO_URI)
 db = client["edugraph"]
 
 # les collections 

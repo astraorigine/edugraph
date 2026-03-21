@@ -1,4 +1,4 @@
-from sprint3_integration.config import MONGO_URI, NEO4J_URI, NEO4J_PASSWORD, NEO4J_USER
+from sprint3_integration.config import  NEO4J_URI, NEO4J_PASSWORD, NEO4J_USER
 from neo4j import GraphDatabase
 
 driver = GraphDatabase.driver(
