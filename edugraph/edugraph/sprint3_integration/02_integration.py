@@ -37,3 +37,26 @@ def synchroniser_etudiant(email):
         "filiere": etudiant["filiere"]
     })
     print(f" Nœud Neo4j créé/mis à jour pour {etudiant['nom']}")
+
+    # 3. Création des relations avec les competences de l'etudiant
+    for competence in etudiant["competences"]:
+        executer_cypher("""
+            Merge(e:Etudiant{email:$email})
+            Merge(c:Competence{nom:$competence})
+            Merge(e)-[:CONNAIT]->(c)
+        """, {
+            "email": etudiant["email"],
+            "competence": competence
+        })
+
+
+#Synchroniser tous les étudiants de MongoDB vers Neo4j
+def synchroniser_tous():
+    etudiants = db["etudiants"].find()
+    for etudiant in etudiants:
+        synchroniser_etudiant(etudiant["email"])
+    print("=="*25)
+    print("Synchronisation terminée pour tous les étudiants.")
+
+if __name__ == "__main__":
+    synchroniser_tous()

@@ -76,6 +76,13 @@
   - [x] Retour des propriétés avec e.nom
 
 
+### US-08 — Synchronisation MongoDB ↔ Neo4j
+#### Statut : DONE
+#### Critères :
+  - [x] Lecture d'un étudiant depuis MongoDB
+  - [x] Création de nœud Neo4j avec MERGE
+  - [x] Création de relations "CONNAIT" automatiquement 
+  - [x] Synchronisation de toute la base
 
 
 
