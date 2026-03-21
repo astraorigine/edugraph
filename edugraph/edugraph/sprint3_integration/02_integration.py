@@ -6,7 +6,7 @@ client = MongoClient("mongodb://localhost:27017/")
 db= client["edugraph"]
 
 #connexion à la base de données Neo4j
-driver =GraphDatabase.driver("bolt://localhost:7687",auth=("neo4j","originel1227"))
+driver =GraphDatabase.driver("bolt://localhost:7687",auth=("neo4j","Tanjiro12"))
 
 def executer_cypher(requete,parametres={}):
     with driver.session() as session:
