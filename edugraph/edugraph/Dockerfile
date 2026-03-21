@@ -12,4 +12,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Commande par défaut au démarrage
-CMD ["python", "sprint3_integration/02_integration.py"]
+CMD ["python", "-m", "sprint3_integration.integration"]
