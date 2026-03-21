@@ -1,8 +1,10 @@
+from sprint3_integration.config import MONGO_URI, NEO4J_URI, NEO4J_PASSWORD, NEO4J_USER
 from pymongo import MongoClient
-import pytest
 
-client = MongoClient("mongodb://localhost:27017/")
+
+client = MongoClient(MONGO_URI)     
 db = client["edugraph"]
+
 
 #Test 1: Connexion fonctionnelle à MongoDB
 def test_connection_mongodb():

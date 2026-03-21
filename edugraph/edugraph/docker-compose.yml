@@ -31,6 +31,7 @@ services:
       - MONGO_URI=mongodb://mongodb:27017
       - NEO4J_URI=bolt://neo4j:7687
       - NEO4J_PASSWORD=edugraph123
+    command: tail -f /dev/null  #  Pour garde le conteneur actif
 
 volumes:
   mongo_data:

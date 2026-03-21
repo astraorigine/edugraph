@@ -1,13 +1,15 @@
+
+from sprint3_integration.config import MONGO_URI, NEO4J_URI, NEO4J_PASSWORD, NEO4J_USER
 from pymongo import MongoClient
 from neo4j import GraphDatabase
-import pytest
 
-# Connexion à MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-db=client["edugraph"]
-# Connexion à Neo4j
-driver = GraphDatabase.driver("bolt://localhost:7687/",auth=("neo4j","Tanjiro12"))
+client = MongoClient(MONGO_URI)       
+db = client["edugraph"]
 
+driver = GraphDatabase.driver(
+    NEO4J_URI,                       
+    auth=(NEO4J_USER, NEO4J_PASSWORD)
+)
 
 def executer_cypher(requete,parametres=({})):
     with driver.session() as session:

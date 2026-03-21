@@ -1,7 +1,10 @@
+from sprint3_integration.config import MONGO_URI, NEO4J_URI, NEO4J_PASSWORD, NEO4J_USER
 from neo4j import GraphDatabase
-import neo4j
 
-driver = GraphDatabase.driver("bolt://localhost:7687",auth =("neo4j","Tanjiro12"))
+driver = GraphDatabase.driver(
+    NEO4J_URI,                         
+    auth=(NEO4J_USER, NEO4J_PASSWORD)
+)
 
 def executer_cypher(requete,parametres=({})):
     with driver.session() as session:
