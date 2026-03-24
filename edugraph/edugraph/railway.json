@@ -1,6 +1,9 @@
 {
   "build": {
     "builder": "DOCKERFILE",
-    "dockerfilePath": "Dockerfile"
+    "dockerfilePath": "edugraph/Dockerfile"
+  },
+  "deploy": {
+    "startCommand": "python -m sprint3_integration.integration"
   }
 }
